@@ -1,0 +1,23 @@
+{
+  "name": "proyecto4-festivalmusica",
+  "version": "1.0.0",
+  "description": "Proyecto con Gulp, SASS, HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arratiabenjamin/PaginaWeb-FestivalMusica.git"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
+  "author": "Benjamin Arratia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arratiabenjamin/PaginaWeb-FestivalMusica/issues"
+  },
+  "homepage": "https://github.com/arratiabenjamin/PaginaWeb-FestivalMusica#readme"
+}
