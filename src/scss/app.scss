@@ -1,5 +1,6 @@
-$whiteBlue: #096774;
+//Importar Archivos SCSS - Forma Antigua.
+// @import 'base/variables';
+// @import 'contenido/contenido';
 
-body {
-    background-color: $whiteBlue;
-}
+//Importar Archivos SCSS - Nueva Forma (Se neccesita un indes.scss en cada carpeta para esto).
+@use 'base';
