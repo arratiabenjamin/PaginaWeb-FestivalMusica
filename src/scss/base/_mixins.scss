@@ -1,23 +1,30 @@
 @use '../base/variables' as v;
 
-@mixin mediaPhone {
+//MediaQuerys
+@mixin mqPhone {
     @media (min-width: v.$phone) {
         @content
     }
 }
-@mixin mediaTablet {
+@mixin mqTablet {
     @media (min-width: v.$tablet) {
         @content
     }
 }
-@mixin mediaDesktop {
+@mixin mqDesktop {
     @media (min-width: v.$desktop) {
         @content
     }
 }
-@mixin mediaDesktopXL {
+@mixin mqDesktopXL {
     @media (min-width: v.$desktopXL) {
         @content
     }
 }
 
+//grid
+@mixin grid($columns : 2, $gap : 5rem) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+}

@@ -7,13 +7,13 @@
     h1 {
         color: v.$blanco;
         text-align: center;
-        @include m.mediaTablet {
+        @include m.mqTablet {
             margin: 0;
         }
     }
     .contenido-header{
         padding: 2rem;
-        @include m.mediaTablet {
+        @include m.mqTablet {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -23,7 +23,7 @@
 
 .navegacion-principal{
     
-    @include m.mediaTablet {
+    @include m.mqTablet {
         display: flex;
         gap: 2rem;
     }
@@ -34,7 +34,7 @@
         text-align: center;
         display: block;
         margin-bottom: 1rem;
-        @include m.mediaTablet {
+        @include m.mqTablet {
             margin: 0;
         }
 

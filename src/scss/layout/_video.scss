@@ -21,7 +21,7 @@
     video{
         width: auto;
         display: block;
-        @include m.mediaDesktop {
+        @include m.mqDesktop {
             width: 100%;
         }
     }
@@ -37,7 +37,7 @@
     }
     p {
         color: v.$blanco;
-        background-color: v.$verde;
+        background-color: v.$naranjo;
         display: inline-block;
         font-size: 2.4rem;
         font-weight: 700;
