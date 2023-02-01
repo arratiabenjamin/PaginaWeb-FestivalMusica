@@ -407,7 +407,7 @@ img {
 .video {
   position: relative;
   max-height: 70rem;
-  min-height: 50rem;
+  min-height: 55rem;
   overflow: hidden;
 }
 .video .overlay {
