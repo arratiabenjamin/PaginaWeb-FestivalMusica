@@ -13,6 +13,7 @@ const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const avif = require('gulp-avif');
 
+//Conversion de SCSS a CSS - Sin Espera
 function css( cb ) {
     src('src/scss/**/*.scss') //Identificar el archivo SASS
         .pipe( plumber() )
@@ -59,12 +60,23 @@ function versionAvif( cb ) {
     cb();
 }
 
+//Mandar Archivos .js a Build
+function js( cb ) {
+    src('src/js/**/*.js')
+        .pipe( dest('build/js') );
+    
+    cb();
+}
+
+//Conversion de SCSS a CSS - Con Espera
 function dev( cb ) {
-    watch('src/scss/**/*.scss', css);//Convertir todos los Archivos scss a css
+    watch('src/scss/**/*.scss', css);//Estar a la espera de modificaciones de archivos SCSS y llamar a csss
+    watch('src/js/**/*.js', js);//Estar a la espera de modificaciones de archivos js y llamar a js
     cb();
 }
 
 exports.css = css;
+exports.js = js;
 exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
 exports.images = parallel(versionWebp, versionAvif, images);

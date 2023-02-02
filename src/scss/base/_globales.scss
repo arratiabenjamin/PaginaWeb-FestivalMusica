@@ -6,12 +6,17 @@ html{
 }
 *,
 *:before,
-*:after {
+*:after{
     box-sizing: inherit;
 }
 body{
     font-family: v.$fuenteP;
     font-size: 1.6rem;
+
+    &.fijar-body {
+        overflow: hidden;
+    }
+
 }
 p {
     font-size: 2rem;

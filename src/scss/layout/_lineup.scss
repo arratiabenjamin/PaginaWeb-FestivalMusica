@@ -55,7 +55,7 @@
 }
 
 .calendario{
-    @include m.resetear-lista;
+    @include m.resetearLista;
     li {
         padding: 2.5rem;
         font-weight: 700;
