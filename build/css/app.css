@@ -356,6 +356,8 @@ h3 {
 
 img {
   max-width: 100%;
+  width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -407,7 +409,7 @@ img {
 .video {
   position: relative;
   max-height: 70rem;
-  min-height: 55rem;
+  min-height: 60rem;
   overflow: hidden;
 }
 .video .overlay {
