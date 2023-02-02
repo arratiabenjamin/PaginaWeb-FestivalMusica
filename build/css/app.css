@@ -320,6 +320,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
 }
 
 p {
@@ -362,7 +363,7 @@ img {
 }
 
 .header {
-  background-color: #20aaa3;
+  background-color: #16b38e;
 }
 .header h1 {
   color: #FFFFFF;
@@ -403,13 +404,13 @@ img {
   }
 }
 .navegacion-principal a:hover {
-  color: #FEF46D;
+  color: #f1e316;
 }
 
 .video {
   position: relative;
   max-height: 70rem;
-  min-height: 60rem;
+  min-height: 50rem;
   overflow: hidden;
 }
 .video .overlay {
@@ -482,4 +483,77 @@ img {
 .contenido-festival .fecha {
   color: #f13e08;
   font-weight: 700;
+}
+
+.lineup {
+  background-color: #f13e08;
+  padding: 5rem 0;
+}
+.lineup h3, .lineup p {
+  text-align: center;
+  color: #FFFFFF;
+}
+.lineup .dia {
+  text-transform: uppercase;
+  margin: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .escenarios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+.escenarios-contenedor p {
+  color: #000000;
+}
+
+.escenario {
+  padding-top: 2rem;
+}
+.escenario p:after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 10rem;
+  background-size: 15rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 2rem auto 0 auto;
+}
+
+.edm .nombre-escenario:after {
+  background-image: url(../img/icono_edm.png);
+}
+
+.rock .nombre-escenario:after {
+  background-image: url(../img/icono_rock.png);
+}
+
+.calendario {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calendario li {
+  padding: 2.5rem;
+  font-weight: 700;
+}
+.calendario li span {
+  font-weight: 400;
+}
+
+.bg-amarillo {
+  background-color: #f1e316;
+}
+.bg-amarillo li:nth-child(odd) {
+  background-color: #b0a50b;
+}
+
+.bg-verde {
+  background-color: #16b38e;
+}
+.bg-verde li:nth-child(odd) {
+  background-color: #10866a;
 }
