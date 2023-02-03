@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock & EDM Festival</title>
+    <title>Dubstep & EDM Festival</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -16,12 +16,12 @@
     <!-- Header -->
     <header class="header">
         <div class="contenedor contenido-header">
-            <h1>Dubstep & Clasic</h1>
+            <h1>Dubstep & EDM</h1>
 
             <nav class="navegacion-principal">
                 <a href="#lineup">Line Up</a>
-                <a href="#">Galeria</a>
-                <a href="#">Boletos</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#boletos">Boletos</a>
             </nav>
         </div>
     </header>
@@ -178,16 +178,73 @@
 
     </section>
 
-    <section class="galeria contenedor">
+    <!-- Galeria -->
+    <section class="galeria contenedor" id="galeria">
         <h3>Galeria</h3>
 
-        <ul class="galeria-imagenes">
-
-        </ul>
+        <ul class="galeria-imagenes"></ul>
     </section>
 
+    <!-- Boletos -->
+    <section class="boletos bg-verde" id="boletos">
+
+        <h3>Boletos</h3>
+
+        <div class="contenedor contenedor-boletos">
+
+            <div class="basico pase">
+
+                <h2 class="pase-nombre">Pase 1 Día</h2>
+
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a Ambos Escenarios</li>
+                        <li>Comida y Bebida</li>
+                    </ul>
+                </div>
+
+                <footer class="pase-footer">
+                    <p>$100</p>
+                </footer>
+
+            </div>
+
+
+            <div class="premium pase">
+
+                <h2 class="pase-nombre">Pase 2 Días</h2>
+
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a Ambos Escenarios</li>
+                        <li>Comida y Bebida</li>
+                        <li>Camisa del Evento</li>
+                        <li>Acceso VIP</li>
+                    </ul>
+                </div>
+
+                <footer class="pase-footer">
+                    <p>$180</p>
+                </footer>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="site-footer">
+        <p>©Dubstep & EDM Festival. Todos los Derechos Reservados.</p>
+    </footer>
 
     <script src="build/js/app.js"></script>
-
 </body>
 </html>
